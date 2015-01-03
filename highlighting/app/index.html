@@ -29,17 +29,34 @@
     <h1>Angular UI with Tuts Plus</h1>
     <h2>Highlighting</h2>
 
+    <!-- Main content -->
     <div class="container" ng-controller="MainController">
+
+      <!-- Editable Text -->
       <p><textarea ng-model="text" style="width:100%;height:200px"></textarea></p>
 
-      <div class="input-group">
-        <input type="search" class="form-control" ng-model="query" placeholder="Search" />
-        <span class="input-group-addon">
-          <span ng-click="clearSearch()" class="glyphicon glyphicon-remove-circle"></span>
-        </span>
+      <!-- Search -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="input-group">
+            <input type="search" class="form-control" ng-model="query" placeholder="Search" />
+            <span class="input-group-addon">
+              <span ng-click="clearSearch()" class="glyphicon glyphicon-remove-circle"></span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="casesensitive"> Case sensitive
+            </label>
+          </div>
+        </div>
       </div>
 
-      <p ng-bind-html='text | highlight:query'></p>
+      <!-- Render with highlighting -->
+      <p ng-bind-html='text | highlight:query:casesensitive'></p>
+
     </div>
 
   </body>

@@ -6,3 +6,15 @@ Better Web Apps With AngularUI
 ## The Highlight Utility
 
 [View](highlighting/index.html) | [Controller](highlighting/app.js)
+
+By default, the filter is case insensitive
+
+  ```html
+  <p ng-bind-html='text | highlight:query'></p>
+  ```
+
+To make it case sensitive
+
+  ```html
+  <p ng-bind-html='text | highlight:query:true'></p>
+  ```
