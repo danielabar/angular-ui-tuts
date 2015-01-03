@@ -3,7 +3,7 @@
   <div class="col-md-4">
     <div class="list-group">
       <a href="/" class="list-group-item">Home</a>
-      <a ng-repeat="route in routes" href="{{route}}" class="list-group-item">{{route}}</a>
+      <a ui-route ng-repeat="route in routes" href="{{route}}" ng-class='{active: $uiRoute}' class="list-group-item">{{route}}</a>
     </div>
   </div>
 
