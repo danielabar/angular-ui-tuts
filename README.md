@@ -32,3 +32,20 @@ A mask is a simple string. To create it, follow these rules
 * For a number, use '9'
 * For a letter, use 'A'
 * To accept any alphanumeric character, use '*'
+
+## The Route Utility
+
+[View](route/main.html) | [Controller](route/app.js)
+
+Provide templates information about what route is currently being displayed.
+
+If value passed to `ui-route` directive matches the current route, then `$uiRoute` is true, otherwise, its false.
+
+  ```html
+  <li ng-repeat="route in routes" ui-route="{{route}}">
+    {{route}}
+    <span ng-show="$uiRoute">ACTIVE</span>
+    <span ng-show="!$uiRoute">INACTIVE</span>
+  </li>
+  ```
+
