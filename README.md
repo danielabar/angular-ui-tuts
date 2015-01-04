@@ -118,3 +118,30 @@ Can also provide a custom validation function. Silly example, if validation shou
 
 These have dependencies on the libraries they wrap.
 
+## The Google Maps Module
+
+[View](map/app/index.html) | [Controller](map/app/app.js)
+
+  ```bash
+  bower install angular-ui-map --save
+  ```
+
+Note that ui-map depends on ui-utils.
+
+To work with Google maps, also need to request that library, which can be done via the cdn
+
+  ```html
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=onGoogleReady"></script>
+  ```
+
+### Angular and Google Maps
+
+By default, Angular starts loading as soon as it encounters `<body ng-app="MyApp">` in `index.html`.
+However, when working with Google maps, must wait for that to be loaded first.
+
+Solution is to remove `ng-app...` from index.html, and instead,
+manually bootstsrap the Angular application from within the callback specified as part of the google cdn url.
+
+In this example `callback=onGoogleReady` (could use any function name you wish).
+
+Need to give the map div a height in order to actually see the map.
