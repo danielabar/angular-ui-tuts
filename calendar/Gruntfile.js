@@ -18,7 +18,9 @@ module.exports = function(grunt) {
       task: {
         src: ['app/index.html'],
         options: {
-          // directory: 'public/lib'
+          exclude: [
+            '/public/lib/bootstrap/dist/js/bootstrap.js'
+          ]
         }
       }
     },
