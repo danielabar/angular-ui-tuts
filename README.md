@@ -5,7 +5,7 @@ Better Web Apps With AngularUI
 
 ## The Highlight Utility
 
-[View](highlighting/index.html) | [Controller](highlighting/app.js)
+[View](highlighting/app/index.html) | [Controller](highlighting/app/app.js)
 
 By default, the filter is case insensitive
 
@@ -21,7 +21,7 @@ To make it case sensitive
 
 ## The Mask Utility
 
-[View](mask/index.html) | [Controller](mask/app.js)
+[View](mask/app/index.html) | [Controller](mask/app/app.js)
 
 Useful for working with forms. Makes it easier for user to enter data that must be in a certain format.
 For example, a credit card number should be 16 digits, divided into groups of 4 each.
@@ -35,7 +35,7 @@ A mask is a simple string. To create it, follow these rules
 
 ## The Route Utility
 
-[View](route/main.html) | [Controller](route/app.js)
+[View](route/app/main.html) | [Controller](route/app/app.js)
 
 Provide templates information about what route is currently being displayed.
 
@@ -51,6 +51,6 @@ If value passed to `ui-route` directive matches the current route, then `$uiRout
 
 ## The Unique Utility
 
-[View](unique/index.html) | [Controller](unique/app.js)
+[View](unique/app/index.html) | [Controller](unique/app/app.js)
 
 This utility is used to filter an array of objects by the values of a specific key so that we only have unique values in that key.
