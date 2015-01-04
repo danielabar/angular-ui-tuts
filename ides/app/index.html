@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular UI with Tuts Plus</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="public/lib/codemirror/lib/codemirror.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Angular Base -->
+  <script src="public/lib/angular/angular.js"></script>
+
+  <!-- Code Mirror -->
+  <script src="public/lib/codemirror/lib/codemirror.js"></script>
+  <script src="public/lib/angular-ui-codemirror/ui-codemirror.js"></script>
+
+  <!-- App -->
+  <script src="app.js"></script>
+</head>
+
+<body ng-app="MyApp">
+  <h1>Angular UI with Tuts Plus</h1>
+  <h2>IDE's</h2>
+
+  <!-- Main Content -->
+  <div class="container" ng-controller="MainController">
+
+    <div ui-codemirror>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

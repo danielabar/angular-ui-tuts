@@ -109,3 +109,10 @@ Can also provide a custom validation function. Silly example, if validation shou
     return value === 'Cookie Monster!';
   };
   ```
+
+## UI Modules
+
+[Wrappers](http://angular-ui.github.io/#ui-modules) around existing projects that allow you to use them as Angular directives.
+
+To use them, need to install the ui module AND the library it wraps, for example, [CodeMirror](http://codemirror.net/)
+
