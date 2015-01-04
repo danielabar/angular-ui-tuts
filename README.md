@@ -49,3 +49,8 @@ If value passed to `ui-route` directive matches the current route, then `$uiRout
   </li>
   ```
 
+## The Unique Utility
+
+[View](unique/index.html) | [Controller](unique/app.js)
+
+This utility is used to filter an array of objects by the values of a specific key so that we only have unique values in that key.
