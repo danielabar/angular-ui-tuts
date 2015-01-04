@@ -95,3 +95,17 @@ It needs quotes because it expects a JavaScript value.
     ui-validate="$value === password"
     ui-validate-watch='"password"' />
   ```
+
+Can also provide a custom validation function. Silly example, if validation should only pass when entered text is "Cookie Monster!"
+
+  ```html
+  <input name="custom_example" ng-model="custom_example" class="form-control"
+    ui-validate=" 'myCustomValidate($value)' ">
+  ```
+
+  ```javascript
+  // controller.js
+  $scope.myCustomValidate = function(value) {
+    return value === 'Cookie Monster!';
+  };
+  ```
