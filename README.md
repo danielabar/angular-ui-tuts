@@ -54,3 +54,10 @@ If value passed to `ui-route` directive matches the current route, then `$uiRout
 [View](unique/app/index.html) | [Controller](unique/app/app.js)
 
 This utility is used to filter an array of objects by the values of a specific key so that we only have unique values in that key.
+
+Use it just like a any other filter
+
+  ```html
+  <tr ng-repeat="item in items | unique: field">
+  ```
+
