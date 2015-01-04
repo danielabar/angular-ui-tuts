@@ -1,0 +1,9 @@
+body {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/* debug */
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}

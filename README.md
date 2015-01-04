@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Better Web Apps With AngularUI](#better-web-apps-with-angularui)
+  - [The Highlight Utility](#the-highlight-utility)
+  - [The Mask Utility](#the-mask-utility)
+  - [The Route Utility](#the-route-utility)
+  - [The Unique Utility](#the-unique-utility)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Better Web Apps With AngularUI
 ==========
 
@@ -61,3 +73,25 @@ Use it just like a any other filter
   <tr ng-repeat="item in items | unique: field">
   ```
 
+## The Validate Utility
+
+[View](validate/app/index.html) | [Controller](validate/app/app.js)
+
+Use for form validation. Angular comes with basic form validation, but there are some more complex cases it can't handle.
+
+For example, angular does not natively support password confirmation, even though pretty much every site with a sign up form requires it.
+
+`ui-validate` directive is similar to `ng-click` or any other event handling directive.
+Takes either a JavaScript string or reference to a function defined in controller that will be run to validate the given field.
+
+`$value` is the value entered into the current input field.
+
+`ui-validate-watch` directive is used to tell ui-validate when to run. It can watch another field for changes.
+It needs quotes because it expects a JavaScript value.
+
+  ```html
+  <input name="password" ng-model="password" />
+  <input name="confirmPassword" ng-model="confirmPassword"
+    ui-validate="$value === password"
+    ui-validate-watch='"password"' />
+  ```
