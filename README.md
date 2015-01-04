@@ -145,3 +145,18 @@ manually bootstsrap the Angular application from within the callback specified a
 In this example `callback=onGoogleReady` (could use any function name you wish).
 
 Need to give the map div a height in order to actually see the map.
+
+## The Calendar Module
+
+[View](calendar/app/index.html) | [Controller](calendar/app/app.js)
+
+Wrapper around [FullCalendar](http://fullcalendar.io/).
+
+  ```bash
+  bower install angular-ui-calendar
+  ```
+
+The calendar UI component is primarily made to display events, not to generate new ones and save them,
+although you could built that functionality on top of calendar if you wish.
+
+By default, calendar events are not editable, but can change this via options.
