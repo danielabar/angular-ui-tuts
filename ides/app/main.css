@@ -2,3 +2,8 @@ body {
   padding-top: 15px;
   padding-left: 20px;
 }
+
+/*by default ace editor has no height*/
+.ace_editor {
+  height: 400px;
+}

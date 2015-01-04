@@ -110,9 +110,11 @@ Can also provide a custom validation function. Silly example, if validation shou
   };
   ```
 
-## UI Modules
+## UI Modules - IDE's
+
+[View](ides/app/index.html) | [Controller](ides/app/app.js)
 
 [Wrappers](http://angular-ui.github.io/#ui-modules) around existing projects that allow you to use them as Angular directives.
 
-To use them, need to install the ui module AND the library it wraps, for example, [CodeMirror](http://codemirror.net/)
+These have dependencies on the libraries they wrap.
 
