@@ -14,6 +14,17 @@ module.exports = function(grunt) {
     // Project settings
     yeoman: appConfig,
 
+    wiredep: {
+      task: {
+        src: ['app/index.html'],
+        options: {
+          exclude: [
+            '/public/lib/bootstrap/dist/js/bootstrap.js'
+          ]
+        }
+      }
+    },
+
     watch: {
       livereload: {
         options: {
