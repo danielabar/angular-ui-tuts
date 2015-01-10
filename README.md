@@ -13,6 +13,7 @@
     - [Angular and Google Maps](#angular-and-google-maps)
   - [The Calendar Module](#the-calendar-module)
   - [UI-Bootstrap](#ui-bootstrap)
+  - [NG Grid Utility](#ng-grid-utility)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -192,3 +193,17 @@ Note that UI-Bootstrap does not come with any css, need to install bootstrap and
   <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.css" />
   ```
 
+## NG Grid Utility
+
+[View](grid/app/index.html) | [Controller](grid/app/app.js)
+
+(Note that setting the grid data in grid options is done as a string)
+
+[ng-grid](http://angular-ui.github.io/ng-grid/) is an older project and being replaced [UI Grid](http://ui-grid.info/),
+however, that's still in beta.
+
+  ```bash
+  bower install ng-grid --save
+  ```
+
+Grid utility is a simple spreadsheet. By default, supports ordering of any field and multi-row select.
