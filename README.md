@@ -7,6 +7,12 @@
   - [The Mask Utility](#the-mask-utility)
   - [The Route Utility](#the-route-utility)
   - [The Unique Utility](#the-unique-utility)
+  - [The Validate Utility](#the-validate-utility)
+  - [UI Modules - IDE's](#ui-modules---ides)
+  - [The Google Maps Module](#the-google-maps-module)
+    - [Angular and Google Maps](#angular-and-google-maps)
+  - [The Calendar Module](#the-calendar-module)
+  - [UI-Bootstrap](#ui-bootstrap)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -160,3 +166,29 @@ The calendar UI component is primarily made to display events, not to generate n
 although you could built that functionality on top of calendar if you wish.
 
 By default, calendar events are not editable, but can change this via options.
+
+## UI-Bootstrap
+
+[View](bootstrap/app/index.html) | [Controller](bootstrap/app/app.js)
+
+Angular directives to use Twitter Bootstrap components easily in Angular. [Docs](http://angular-ui.github.io/bootstrap/)
+
+Reduces the amount of markup needed, for example [Tabs](http://angular-ui.github.io/bootstrap/#/tabs)
+
+  ```bash
+  bower install angular-bootstrap --save
+  ```
+
+Use the `ui-bootstrap-tpls.js` version (i.e. with html templates) unless you want to write your own templates,
+in which case, use `ui-bootstrap-.js`.
+
+Note that UI-Bootstrap does not come with any css, need to install bootstrap and link to the css to get the styling.
+
+  ```bash
+  bower install bootstrap --save
+  ```
+
+  ```html
+  <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.css" />
+  ```
+
