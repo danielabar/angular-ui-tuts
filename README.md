@@ -15,6 +15,7 @@
   - [UI-Bootstrap](#ui-bootstrap)
   - [NG Grid Utility](#ng-grid-utility)
   - [UI Select](#ui-select)
+  - [UI Router](#ui-router)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -229,3 +230,22 @@ Requires bootstrap css, plus the ui-select css that comes bundled with it.
 
 Particularly useful for searching through large datasets, for example, all countries.
 Or even dynamically such as Places search in Google Maps.
+
+## UI Router
+
+[View](router/app/index.html) | [App Config](router/app/app.js)
+
+  ```bash
+  bower install angular-ui-router --save
+  ```
+
+More features than the built in Angular router.
+
+The term `state` is used to refer to different pages or "states" of the application.
+
+When using built-in Angular router, href's in nav html elements have to specify the same paths that are in app config,
+which means if app config changes, html also has to change.
+
+ui-router has an improvement, using `ui-sref` directive, which stands for state href.
+
+Instead of putting actual path, put name of route.
