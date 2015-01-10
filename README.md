@@ -14,6 +14,7 @@
   - [The Calendar Module](#the-calendar-module)
   - [UI-Bootstrap](#ui-bootstrap)
   - [NG Grid Utility](#ng-grid-utility)
+  - [UI Select](#ui-select)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -207,3 +208,24 @@ however, that's still in beta.
   ```
 
 Grid utility is a simple spreadsheet. By default, supports ordering of any field and multi-row select.
+
+## UI Select
+
+[View](select/app/index.html) | [Controller](select/app/app.js)
+
+"Angularized" wrapper around other libraries Select2 and Selectize. Enhanced select dropdown box.
+
+  ```bash
+  bower install angular-ui-select --save
+  ```
+
+Requires bootstrap css, plus the ui-select css that comes bundled with it.
+
+`$select` is an Angular variable exposed by ui-select library.
+
+`$select.search` is whatever value user is typing into the search box.
+
+`$select.selected` is whatever choice the user ended up selecting.
+
+Particularly useful for searching through large datasets, for example, all countries.
+Or even dynamically such as Places search in Google Maps.
